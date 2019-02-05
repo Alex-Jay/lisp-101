@@ -36,7 +36,7 @@
 
 (defun my-length (list)
 	"Get length of list recursively"
-	(cond 	((null list) 	0 								)
+	(cond 	((null list) 	nil 								)
 			(t 				(+ 1 (my-length (cdr list))) 	)
 	)
 )
@@ -46,5 +46,13 @@
 	(cond	((= n 0) 			(car list)	 )
 			((null list) 		nil			 )
 			(t (my-nth (- n 1) 	(cdr list))	 )
+	)
+)
+
+(defun filter-negs (list)
+	"Recursively remove negatives from a list"
+	(cond	((null list) 			nil				 							)
+			((minusp (car list)) 	(filter-negs (cdr list)) 					)
+			(t 						(cons (car list) (filter-negs (cdr list))) 	)
 	)
 )
