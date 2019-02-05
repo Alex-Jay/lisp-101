@@ -63,3 +63,11 @@
 			(t 						(cons (car list1) (my-append (cdr list1) list2)) 	)
 	)
 )
+
+(defun count-atoms (list)
+	"Recursively count how many atoms exist in a list"
+	(cond 	((null list) 		0 														)
+			((atom list) 		1 														)
+			(t 					(+ (count-atoms (car list)) (count-atoms (cdr list)))	)
+	)
+)
