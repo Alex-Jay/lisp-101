@@ -37,7 +37,7 @@
 (defun my-length (list)
 	"Get length of list recursively"
 	(cond 	((null list) 	nil 								)
-			(t 				(+ 1 (my-length (cdr list))) 	)
+			(t 				(+ 1 (my-length (cdr list))) 		)
 	)
 )
 
@@ -54,5 +54,12 @@
 	(cond	((null list) 			nil				 							)
 			((minusp (car list)) 	(filter-negs (cdr list)) 					)
 			(t 						(cons (car list) (filter-negs (cdr list))) 	)
+	)
+)
+
+(defun my-append (list1 list2)
+	"Append two lists together recursively"
+	(cond	((null list1) 			list2 												)
+			(t 						(cons (car list1) (my-append (cdr list1) list2)) 	)
 	)
 )
