@@ -1,0 +1,3 @@
+Handwritten Digits: http://yann.lecun.com/exdb/mnist/
+
+Skin Not Skin: https://archive.ics.uci.edu/ml/machine-learning-databases/00229/Skin_NonSkin.txt
