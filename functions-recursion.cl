@@ -71,3 +71,24 @@
 			(t 					(+ (count-atoms (car list)) (count-atoms (cdr list)))	)
 	)
 )
+
+;;; (mapcar #'abs '(-4 -3 0 55 4.3 -120.33) )
+;;; Applies abs function to all elements of the list
+
+;;; (format t "Hello, World!")
+;;; Prints text to screen
+
+;;; (format t "List: ~S" '(1 2 3 4 5))
+;;; Prints formatted list
+
+;;; (format t "Hello, ~%~S" john)
+;;; ~% adds new line
+
+;;; (format t "~&~S")
+;;; ~& adds new line if text already exists on current line
+
+;;; (dotimes (i 4) (format t "~&i: ~S" i))
+;;; Prints formatted text 4 times with new lines
+
+;;; (dolist (i '(red green blue)) (format t "~&i: ~S" i) )
+;;; Iterates a list and prints it in a formatted fashion
