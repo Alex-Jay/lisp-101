@@ -41,9 +41,9 @@
 	)
 )
 
-(format t "~%~%~%m1: ~S" m1)
-(format t "~%~%~%m2: ~S" m2)
-(format t "~%~%~%Result: ~S" (mult m1 m2))
+;; (format t "~%~%~%m1: ~S" m1)
+;; (format t "~%~%~%m2: ~S" m2)
+;; (format t "~%~%~%Result: ~S" (mult m1 m2))
 
 ;; Neural Network functions
 
